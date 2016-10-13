@@ -1,11 +1,11 @@
 ## 基本知识点
 ### 1. React中 context的使用
-##### context是在 react @ 0.14版本以后发布的一个高级且实验性的功能。
+<p> context是在 react @ 0.14版本以后发布的一个高级且实验性的功能。</p>
 ### 使用Context的原因
-##### 有时候想传递数据通过组建树，但是不想给每一层级的组件手动传递属性，那么context就能帮我们 "越级" 传递数据到组件数中你想传递到的
-##### 深沉次组件。 比如： 有时候 A组件 为了 给B组件 中 的 C组件 传递一个 prop，通常的做法是把参数在组件中传递2次才能最终将A组件中的prop
-##### 传递给C组件。
-##### 比如如下代码演示：
+<p> 有时候想传递数据通过组建树，但是不想给每一层级的组件手动传递属性，那么context就能帮我们 "越级" 传递数据到组件数中你想传递到的
+深沉次组件。 比如： 有时候 A组件 为了 给B组件 中 的 C组件 传递一个 prop，通常的做法是把参数在组件中传递2次才能最终将A组件中的prop
+传递给C组件。</p>
+<p> 比如如下代码演示：</p>
     import React from 'react';
     import ReactDOM from 'react-dom';
     var Button = React.createClass({
@@ -84,8 +84,8 @@
     ReactDOM.render(
       <MessageList />, document.getElementById('root')
     )
-##### 上面的MessageList组件是父级组件：指定数据并要将数据传递下去的父组件要定义 childContextTypes 和 getChildContext() ；想要接收到数据的子组件 必须定义 contextTypes 来使用传递过来的 context 。
-### 待续
+<p> 上面的MessageList组件是父级组件：指定数据并要将数据传递下去的父组件要定义 childContextTypes 和 getChildContext() ；想要接收到数据的子组件 必须定义 contextTypes 来使用传递过来的 context 。</p>
+
 ### 相关资料整理
 1. Fetch相关的 (https://yq.aliyun.com/articles/5849)
 2. React Router相关的如下：
